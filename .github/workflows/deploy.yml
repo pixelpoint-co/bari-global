@@ -3,23 +3,42 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch name
-
+      - main # Change this if needed
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-
-      # If you need to build your project first, add build steps here
-      # - name: Install dependencies
-      #   run: npm install
-      # - name: Build
-      #   run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # 1. Checkout the repository.
+      - name: Checkout code
+        uses: actions/checkout@v3
         with:
-          folder: build # The folder you want to deploy
-          branch: gh-pages # The branch to deploy to
-          clean: true # Automatically remove deleted files
+          fetch-depth: 0
+
+      # 2. Deploy the contents of the ./build directory to the gh-pages branch.
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create a temporary deployment directory.
+          cd build
+
+          # Initialize a new Git repository.
+          git init
+
+          # Configure Git with a generic username and email.
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create the gh-pages branch.
+          git checkout -b gh-pages
+
+          # Stage and commit all files.
+          git add .
+          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+
+          # Push the commit to the gh-pages branch.
+          # The URL below uses the GitHub token for authentication.
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
