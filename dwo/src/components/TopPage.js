@@ -14,7 +14,16 @@ const TopPage = () => {
         fetchpriority="high"
         poster="/dwo-poster.jpg"
       >
-        <source src="/DWO.mp4" type="video/mp4" />
+        <source
+          src="/DWO-m.mp4"
+          type="video/mp4"
+          media="(max-width: 768px)"
+        />
+        <source
+          src="/DWO.mp4"
+          type="video/mp4"
+          media="(min-width: 769px)"
+        />
         Your browser does not support the video tag.
       </video>
       {/* PNG Image in Center (Bigger on Mobile) */}
