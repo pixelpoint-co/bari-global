@@ -25,6 +25,9 @@ jobs:
           # Create a temporary deployment directory.
           cd build
 
+          # Create CNAME file
+          echo "bari-global.com" > CNAME
+
           # Initialize a new Git repository.
           git init
 
