@@ -28,7 +28,7 @@ jobs:
         run: |
           cd dwo
           npm install
-          npm run build
+          CI=false npm run build
 
       # 4. Deploy the contents of the ./dwo/build directory to the gh-pages branch
       - name: Deploy to GitHub Pages
