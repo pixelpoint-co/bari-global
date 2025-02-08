@@ -22,6 +22,7 @@ const TopPage = () => {
         src="/DWO_middle.png"
         alt="Central Graphic"
         className="absolute w-[80vw] max-w-[600px] md:max-w-[500px] opacity-90"
+        fetchpriority="low"
       />
 
       {/* Banner Component */}
