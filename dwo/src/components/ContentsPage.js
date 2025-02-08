@@ -25,11 +25,11 @@ const sections = [
   { number: "01", title: "Vision", subtitle: "Oasis of the Future", img: imageLinks.vision, id: "vision" },
   { number: "02", title: "Marketing Campaign", subtitle: "Dubai Wellness Oasis", img: imageLinks.marketing, id: "part-a" },
   { number: "03", title: "Housing Solution", subtitle: "Smart Tiny Living", img: imageLinks.housing, id: "part-b" },
-  { number: "04", title: "Integration", subtitle: "Wellness & Housing Merge", img: imageLinks.integration, id: "integration" },
+  { number: "04", title: "Wellness & Housing", subtitle: "Wellness & Housing Merge", img: imageLinks.integration, id: "integration" },
   { number: "05", title: "Business Impact", subtitle: "Economic & Cultural Influence", img: imageLinks.businessImpact, id: "business-impact" },
   { number: "06", title: "Budget & Timeline", subtitle: "Project Financial Plan", img: imageLinks.budget, id: "budget-timeline" },
   { number: "07", title: "Stakeholders", subtitle: "Key Partners & Collaborators", img: imageLinks.stakeholders, id: "stakeholders" },
-  { number: "08", title: "Implementation", subtitle: "Execution Strategy & Phases", img: imageLinks.implementation, id: "implementation" },
+  { number: "08", title: "Timeline", subtitle: "Execution Strategy & Phases", img: imageLinks.implementation, id: "implementation" },
 ];
 
 const ContentsPage = () => {

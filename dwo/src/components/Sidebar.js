@@ -4,11 +4,11 @@ const sections = [
   { id: "vision", label: "Vision" },
   { id: "part-a", label: "Marketing Campaign" },
   { id: "part-b", label: "Housing Solution" },
-  { id: "integration", label: "Integration" },
+  { id: "integration", label: "Wellness & Housing" },
   { id: "business-impact", label: "Business Impact" },
   { id: "budget-timeline", label: "Budget & Timeline" },
   { id: "stakeholders", label: "Stakeholders" },
-  { id: "implementation", label: "Implementation" },
+  { id: "implementation", label: "Timeline" },
 ];
 
 const Sidebar = () => {
