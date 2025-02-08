@@ -7,7 +7,7 @@ const BusinessImpact = () => {
 
   return (
     <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#FAF9F6] to-[#ECE9E6] text-gray-900 px-8 md:px-20 lg:px-40 py-24">
-      
+
       {/* Title Section */}
       <motion.div ref={titleRef} initial="hidden" animate={titleAnimation} variants={fadeIn} className="mb-12 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide uppercase text-[#2D2D2D] font-inter">
@@ -32,7 +32,7 @@ const BusinessImpact = () => {
 
         {/* Business Image */}
         <div className="md:w-1/2">
-          <img src="https://cdn.pixabay.com/photo/2020/02/18/08/35/finance-4858797_960_720.jpg" alt="Real Estate" className="w-full h-64 object-cover opacity-70" />
+          <img fetchpriority="low" src="https://cdn.pixabay.com/photo/2020/02/18/08/35/finance-4858797_960_720.jpg" alt="Real Estate" className="w-full h-64 object-cover opacity-70" />
         </div>
       </motion.div>
 
@@ -50,7 +50,7 @@ const BusinessImpact = () => {
 
         {/* Cultural Image */}
         <div className="md:w-1/2">
-          <img src="https://cdn.pixabay.com/photo/2016/02/03/20/23/arab-1177904_1280.jpg" alt="Emirati Culture" className="w-full h-64 object-cover opacity-70" />
+          <img fetchpriority="low" src="https://cdn.pixabay.com/photo/2016/02/03/20/23/arab-1177904_1280.jpg" alt="Emirati Culture" className="w-full h-64 object-cover opacity-70" />
         </div>
       </motion.div>
 
