@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[7699],{52574:(e,a,s)=>{s.r(a),s.d(a,{default:()=>r});var l=s(65043),n=s(87728),t=s(73216),c=s(70579);const r=()=>{const e=(0,t.Zp)();(0,l.useCallback)((()=>{e({pathname:"list"})})),(0,l.useCallback)((()=>{e({pathname:"add"})}));return(0,c.jsx)(n.A,{children:(0,c.jsx)("div",{className:"flex flex-wrap w-full",children:(0,c.jsx)(t.sv,{})})})}}}]);
+//# sourceMappingURL=7699.446322c8.chunk.js.map

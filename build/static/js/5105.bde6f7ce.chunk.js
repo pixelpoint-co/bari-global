@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[5105],{77128:(e,s,l)=>{l.r(s),l.d(s,{default:()=>c});var n=l(65043),a=l(87728),r=l(73216),t=l(70579);const c=()=>{const e=(0,r.Zp)();(0,n.useCallback)((()=>{e({pathname:"list"})}));return(0,t.jsx)(a.A,{children:(0,t.jsx)("div",{className:"flex flex-wrap w-full",children:(0,t.jsx)(r.sv,{})})})}}}]);
+//# sourceMappingURL=5105.bde6f7ce.chunk.js.map
