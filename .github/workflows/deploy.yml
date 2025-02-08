@@ -11,37 +11,49 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repository.
+      # 1. Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # 2. Deploy the contents of the ./build directory to the gh-pages branch.
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20" # or your preferred version
+
+      # 3. Install dependencies and build
+      - name: Install and Build
+        run: |
+          cd dwo
+          npm install
+          npm run build
+
+      # 4. Deploy the contents of the ./dwo/build directory to the gh-pages branch
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Create a temporary deployment directory.
-          cd build
+          # Navigate to the build directory
+          cd dwo/build
 
           # Create CNAME file
           echo "www.bari-global.com" > CNAME
 
-          # Initialize a new Git repository.
+          # Initialize a new Git repository
           git init
 
-          # Configure Git with a generic username and email.
+          # Configure Git with a generic username and email
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Create the gh-pages branch.
+          # Create the gh-pages branch
           git checkout -b gh-pages
 
-          # Stage and commit all files.
+          # Stage and commit all files
           git add .
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
 
-          # Push the commit to the gh-pages branch.
-          # The URL below uses the GitHub token for authentication.
+          # Push the commit to the gh-pages branch
           git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
