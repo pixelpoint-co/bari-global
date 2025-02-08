@@ -59,8 +59,8 @@ const ImplementationPlan = () => {
         variants={fadeIn}
         className="mb-12 text-center"
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide uppercase text-[#2D2D2D] font-inter">
-          Implementation Plan
+        <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide uppercase text-[#2D2D2D] font-inter">
+          Timeline
         </h1>
         <div className="w-20 h-1 bg-[#AA8453] mx-auto mt-4 rounded-full"></div>
       </motion.div>

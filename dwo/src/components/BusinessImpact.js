@@ -17,12 +17,12 @@ const BusinessImpact = () => {
       </motion.div>
 
       {/* Business Impact */}
-      <motion.div ref={businessRef} initial="hidden" animate={businessAnimation} variants={fadeIn} className="max-w-5xl flex flex-col md:flex-row items-center md:items-start gap-12 text-center md:text-left mb-16">
+      <motion.div ref={businessRef} initial="hidden" animate={businessAnimation} variants={fadeIn} className="max-w-5xl flex flex-col md:flex-row items-center md:items-start gap-12 text-left mb-16">
         <div className="md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 font-inter mb-4">
             Business Aspect
           </h2>
-          <ul className="list-disc pl-6 text-gray-700 text-lg md:text-xl leading-relaxed font-worksans">
+          <ul className="list-disc pl-6 text-gray-700 text-lg md:text-xl leading-relaxed font-worksans text-left">
             <li><span className="bg-[#FDE68A] px-2 rounded-md">Tourism</span>: Attract medical tourists and wellness enthusiasts.</li>
             <li><span className="bg-[#FDE68A] px-2 rounded-md">Real Estate</span>: Generate income from tiny housing rentals and sales.</li>
             <li><span className="bg-[#FDE68A] px-2 rounded-md">Partnerships</span>: Collaborate with global wellness brands and local businesses.</li>
@@ -37,12 +37,12 @@ const BusinessImpact = () => {
       </motion.div>
 
       {/* Cultural Impact */}
-      <motion.div ref={culturalRef} initial="hidden" animate={culturalAnimation} variants={fadeIn} className="max-w-5xl flex flex-col md:flex-row-reverse items-center md:items-start gap-12 text-center md:text-left">
+      <motion.div ref={culturalRef} initial="hidden" animate={culturalAnimation} variants={fadeIn} className="max-w-5xl flex flex-col md:flex-row-reverse items-center md:items-start gap-12 text-left">
         <div className="md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 font-inter mb-4">
             Cultural Aspect
           </h2>
-          <ul className="list-disc pl-6 text-gray-700 text-lg md:text-xl leading-relaxed font-worksans">
+          <ul className="list-disc pl-6 text-gray-700 text-lg md:text-xl leading-relaxed font-worksans text-left">
             <li><span className="bg-[#FDE68A] px-2 rounded-md">Local Engagement</span>: Foster community pride by integrating Emirati culture into wellness events and housing designs.</li>
             <li><span className="bg-[#FDE68A] px-2 rounded-md">Global Awareness</span>: Position Dubai as a leader in wellness innovation and cultural authenticity.</li>
           </ul>
