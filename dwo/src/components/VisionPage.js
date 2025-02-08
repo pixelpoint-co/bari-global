@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useSectionInView, fadeIn, motion } from "../hooks/useSectionInView";
 
 const VisionPage = () => {
   const { ref: visionRef, animation: visionAnimation } = useSectionInView();
+  const { ref: imageRef, animation: imageAnimation } = useSectionInView();
   const { ref: quoteRef, animation: quoteAnimation } = useSectionInView();
-  const { ref: explanationRef, animation: explanationAnimation } = useSectionInView();
   const { ref: keyPointsRef, animation: keyPointsAnimation } = useSectionInView();
   const { ref: conclusionRef, animation: conclusionAnimation } = useSectionInView();
 
@@ -24,6 +24,11 @@ const VisionPage = () => {
         <div className="w-20 h-1 bg-[#AA8453] mx-auto mt-4 rounded-full"></div>
       </motion.div>
 
+      {/* Image Section */}
+      <motion.div ref={imageRef} initial="hidden" animate={imageAnimation} variants={fadeIn} className="w-full max-w-5xl px-4 mb-12">
+        <img src="https://cdn.pixabay.com/photo/2016/02/03/20/23/arab-1177904_1280.jpg" alt="Vision" className="w-full opacity-80 object-cover" />
+      </motion.div>
+
       {/* Quote Section */}
       <motion.div ref={quoteRef} initial="hidden" animate={quoteAnimation} variants={fadeIn} className="relative max-w-3xl text-center mb-16">
         <p className="text-xl md:text-2xl italic text-gray-700 font-worksans leading-relaxed">
@@ -32,19 +37,6 @@ const VisionPage = () => {
         <span className="block mt-4 text-lg text-[#AA8453] font-medium">
           – Quran 17:26 (Surah Al-Isra)
         </span>
-      </motion.div>
-
-      {/* Explanation Section */}
-      <motion.div ref={explanationRef} initial="hidden" animate={explanationAnimation} variants={fadeIn} className="max-w-3xl text-center mb-16">
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-worksans">
-          <span className="bg-[#FDE68A] px-1 rounded-md">Our mission</span> is to transform Dubai into a global wellness hub, seamlessly combining luxury, innovation, and cultural authenticity. 
-          <br />
-          <br />
-          <span className="bg-[#FDE68A] px-1 rounded-md">The goal</span> is to attract tourists, investors, and locals alike, fostering a holistic environment for rejuvenation and growth.
-        </p>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-worksans mt-6">
-          <span className="bg-[#FDE68A] px-1 rounded-md">This project will address two critical tasks:</span>
-        </p>
       </motion.div>
 
       {/* Key Points Section */}

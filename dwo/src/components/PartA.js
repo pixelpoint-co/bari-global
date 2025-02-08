@@ -57,7 +57,6 @@ const PartA = () => {
       <motion.div ref={overviewRef} initial="hidden" animate={overviewAnimation} variants={fadeIn} className="max-w-3xl text-center mb-16">
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-worksans">
           The <span className="bg-[#FDE68A] px-1 rounded-md">Dubai Wellness Oasis</span> campaign is a one-year initiative designed to position Dubai as the world's leading wellness destination. 
-          <br />This campaign introduces <span className="bg-[#FDE68A] px-1 rounded-md">six strategic ideas</span> to elevate wellness tourism, sustainable health experiences, and holistic living in Dubai.
         </p>
       </motion.div>
 

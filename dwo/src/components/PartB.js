@@ -55,10 +55,6 @@ const PartB = () => {
         <span className="inline-block underline decoration-[#AA8453] decoration-2 ml-1">affordable</span> and
         <span className="inline-block underline decoration-[#AA8453] decoration-2 ml-1">sustainable</span> housing solutions in Dubai.
       </p>
-
-        <p className="text-lg md:text-xl text-gray-700 font-worksans mt-6">
-          The <span className="bg-[#FDE68A] px-2 rounded-md">Smart Tiny Living</span> initiative focuses on compact, tech-integrated, and community-driven homes.
-        </p>
       </motion.div>
 
       {/* Key Features Section */}

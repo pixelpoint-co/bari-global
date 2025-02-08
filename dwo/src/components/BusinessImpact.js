@@ -50,7 +50,7 @@ const BusinessImpact = () => {
 
         {/* Cultural Image */}
         <div className="md:w-1/2">
-          <img fetchpriority="low" src="https://cdn.pixabay.com/photo/2016/02/03/20/23/arab-1177904_1280.jpg" alt="Emirati Culture" className="w-full h-64 object-cover opacity-70" />
+          <img fetchpriority="low" src="https://cdn.pixabay.com/photo/2016/02/03/20/23/arab-1177906_960_720.jpg" alt="Emirati Culture" className="w-full h-64 object-cover opacity-70" />
         </div>
       </motion.div>
 
