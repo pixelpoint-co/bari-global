@@ -12,6 +12,7 @@ import MarketingBudgetTimeline from "./components/MarketingBudgetTimeline";
 import KeyStakeholders from "./components/KeyStakeholders";
 import ImplementationPlan from "./components/ImplementationPlan";
 import Conclusion from "./components/Conclusion";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <div id="budget-timeline"><MarketingBudgetTimeline /></div>
       <div id="stakeholders"><KeyStakeholders /></div>
       <div id="implementation"><ImplementationPlan /></div>
+      <Footer />
     </div>
   );
 }
