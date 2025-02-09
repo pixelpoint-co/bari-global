@@ -15,14 +15,19 @@ const TopPage = () => {
         poster="/dwo-poster.jpg"
       >
         <source
-          src="/DWO-m.mp4"
-          type="video/mp4"
-          media="(max-width: 768px)"
-        />
-        <source
           src="/DWO.mp4"
           type="video/mp4"
-          media="(min-width: 769px)"
+          media="(min-width: 1920px)"
+        />
+        <source
+          src="/DWO-l.mp4"
+          type="video/mp4"
+          media="(min-width: 768px) and (max-width: 1919px)"
+        />
+        <source
+          src="/DWO-m.mp4"
+          type="video/mp4"
+          media="(max-width: 767px)"
         />
         Your browser does not support the video tag.
       </video>
