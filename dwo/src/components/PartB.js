@@ -1,5 +1,5 @@
 import { useSectionInView, fadeIn, motion } from "../hooks/useSectionInView";
-import { Home, Settings, Users, MapPin, Heart } from "lucide-react"; // Icons
+import { Home, Settings, Users, Leaf, Heart } from "lucide-react"; // Icons
 
 const PartB = () => {
   const { ref: titleRef, animation: titleAnimation } = useSectionInView();
@@ -9,28 +9,33 @@ const PartB = () => {
   const features = [
     { 
       icon: <Home size={28} className="text-[#AA8453]" />, 
-      title: "Tiny Housing Design", 
-      desc: "Compact homes (200-400 sq. ft.), built with sustainable, locally sourced materials and modular layouts."
+      title: "Biophilic Meditation Spaces", 
+      desc: "Designed to promote relaxation and mindfulness with natural materials, greenery, and soothing water features."
     },
     { 
       icon: <Settings size={28} className="text-[#AA8453]" />, 
-      title: "Smart Living Technology", 
-      desc: "IoT-enabled lighting, security, and solar-powered energy-efficient appliances."
+      title: "AI-Powered Energy Efficiency", 
+      desc: "Smart home systems optimizing air purification, lighting, and temperature for a healthier indoor environment."
     },
     { 
       icon: <Users size={28} className="text-[#AA8453]" />, 
-      title: "Community Spaces", 
-      desc: "Co-working areas, wellness centers, shared gardens, and cultural hubs for social engagement."
+      title: "Community Wellness Hubs", 
+      desc: "Integrated wellness centers featuring spa retreats, longevity clinics, and holistic healing experiences."
     },
     { 
-      icon: <MapPin size={28} className="text-[#AA8453]" />, 
-      title: "Location & Scalability", 
-      desc: "Pilot community in Dubai South or Al Qudra, with future expansion across the Emirates."
+      icon: <Leaf size={28} className="text-[#AA8453]" />, 
+      title: "Sustainability & Nature", 
+      desc: "Eco-friendly living spaces with solar energy, recycled water systems, and sustainable architecture."
     },
     { 
       icon: <Heart size={28} className="text-[#AA8453]" />, 
-      title: "Wellness-Oriented Living", 
-      desc: "Designed with meditation corners, air purification, and green spaces."
+      title: "Luxury Wellness Retreat Villas", 
+      desc: "Exclusive homes offering spa wellness programs and longevity treatments tailored for high-net-worth investors."
+    },
+    { 
+      icon: <Users size={28} className="text-[#AA8453]" />, 
+      title: "Premium Wellness Residences", 
+      desc: "Community-driven real estate for mid-tier professionals and expats seeking holistic well-being."
     }
   ];
 
@@ -40,21 +45,29 @@ const PartB = () => {
       {/* Title Section */}
       <motion.div ref={titleRef} initial="hidden" animate={titleAnimation} variants={fadeIn} className="mb-12 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide uppercase text-[#2D2D2D] font-inter">
-          Part B: Affordable Housing Solution
+          Part B: Wellness-Oriented Living
         </h1>
         <p className="text-lg md:text-xl text-gray-700 font-worksans mt-4 italic">
-          Smart Tiny Living
+          The Future of Real Estate in Dubai
         </p>
         <div className="w-20 h-1 bg-[#AA8453] mx-auto mt-4 rounded-full"></div>
       </motion.div>
 
       {/* Overview Section */}
       <motion.div ref={overviewRef} initial="hidden" animate={overviewAnimation} variants={fadeIn} className="max-w-3xl text-center mb-16 leading-loose">
-      <p className="text-lg md:text-xl text-gray-700 font-worksans">
-        <span className="bg-[#FDE68A] px-2 rounded-md">Our mission</span> is to redefine modern living with
-        <span className="inline-block underline decoration-[#AA8453] decoration-2 ml-1">affordable</span> and
-        <span className="inline-block underline decoration-[#AA8453] decoration-2 ml-1">sustainable</span> housing solutions in Dubai.
-      </p>
+        <p className="text-lg md:text-xl text-gray-700 font-worksans">
+          <span className="bg-[#FDE68A] px-2 rounded-md">Wellness-Oriented Living</span> is a groundbreaking concept that integrates holistic well-being with cutting-edge technology, offering a new standard for modern real estate in Dubai.
+        </p>
+      </motion.div>
+
+      {/* Subheading: Wellness-Living 3.0 */}
+      <motion.div ref={featuresRef} initial="hidden" animate={featuresAnimation} variants={fadeIn} className="max-w-4xl text-center mb-10">
+        <h2 className="text-3xl font-semibold text-[#2D2D2D] font-inter">
+          Wellness-Living 3.0 – New Dubai’s Real Estate Model
+        </h2>
+        <p className="text-lg text-gray-700 font-worksans mt-2">
+          A pioneering development blending luxury, wellness, and sustainability, shaping Dubai’s future as the global leader in holistic living.
+        </p>
       </motion.div>
 
       {/* Key Features Section */}
@@ -80,6 +93,7 @@ const PartB = () => {
           </motion.div>
         ))}
       </motion.div>
+
     </div>
   );
 };

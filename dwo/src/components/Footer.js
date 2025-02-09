@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Contact Us</h3>
           <p className="text-md text-gray-600">
             <a href="mailto:bari@lhpasia.com" className="hover:text-[#AA8453] transition-all">
-              bari@lhpasia.com
+              bari@bari.co.jp
             </a>
           </p>
         </div>

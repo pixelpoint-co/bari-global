@@ -32,10 +32,13 @@ const VisionPage = () => {
       {/* Quote Section */}
       <motion.div ref={quoteRef} initial="hidden" animate={quoteAnimation} variants={fadeIn} className="relative max-w-3xl text-center mb-16">
         <p className="text-xl md:text-2xl italic text-gray-700 font-worksans leading-relaxed">
-          "And give the relative his right, and [also] the poor and the traveler, and do not spend wastefully."
+          وَيَزِيدُ ٱللَّهُ ٱلَّذِينَ ٱهْتَدَوْا۟ هُدًۭى ۖ وَٱلْبَـٰقِيَـٰتُ ٱلصَّـٰلِحَـٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌۭ مَّرَدًّۭا
+        </p>
+        <p className="text-lg md:text-xl italic text-gray-700 font-worksans mt-4 leading-relaxed">
+          "But those who strive for guidance—He increases them in guidance. And the enduring good deeds are best in reward and best in outcome."
         </p>
         <span className="block mt-4 text-lg text-[#AA8453] font-medium">
-          – Quran 17:26 (Surah Al-Isra)
+          – Quran 19:76 (Surah Maryam)
         </span>
       </motion.div>
 

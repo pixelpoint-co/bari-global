@@ -63,29 +63,6 @@ const MarketingBudgetTimeline = () => {
         </div>
       </motion.div>
 
-      {/* Timeline Table */}
-      <motion.div ref={timelineRef} initial="hidden" animate={timelineAnimation} variants={fadeIn} className="w-full max-w-3xl">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 font-inter mb-6">Campaign Timeline</h2>
-        <div className="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-[#AA8453] text-white">
-                <th className="p-4 text-left">Phase</th>
-                <th className="p-4 text-right">Timeline</th>
-              </tr>
-            </thead>
-            <tbody>
-              {timelinePhases.map(({ phase, timeline }, index) => (
-                <tr key={index} className="border-b border-gray-300 hover:bg-gray-100 transition">
-                  <td className="p-4">{phase}</td>
-                  <td className="p-4 text-right">{timeline}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </motion.div>
-
     </div>
   );
 };

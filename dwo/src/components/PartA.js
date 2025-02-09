@@ -9,32 +9,32 @@ const PartA = () => {
   const campaigns = [
     { 
       title: "Outdoor Yoga Sessions", 
-      desc: "Experience sunrise and sunset yoga at Dubai’s most iconic spots like Marina, Jumeirah Beach, and Al Qudra Lakes.", 
+      desc: "Hosted at Dubai Marina, Jumeirah Beach, and Al Qudra Lakes, attracting wellness travelers and influencers.", 
       icon: <FaLeaf className="text-[#AA8453] text-3xl" />
     },
     { 
       title: "Outdoor Cinema Experiences", 
-      desc: "Luxury car cinema nights during summer, and cozy outdoor screenings in winter, featuring wellness films and cultural documentaries.", 
+      desc: "Partnering with luxury car brands for car cinema during the hot summer, and cozy VIP screenings in winter.", 
       icon: <FaFilm className="text-[#AA8453] text-3xl" />
     },
     { 
       title: "Healthy Ice Cream Trucks", 
-      desc: "Mobile trucks serving guilt-free organic and vegan ice cream, offering unique Emirati flavors like saffron, dates, and camel milk.", 
+      desc: "Partnering with UAE organic brands to create limited-edition flavors inspired by Dubai’s heritage like saffron and dates, bringing these ice cream trucks around Dubai.", 
       icon: <FaIceCream className="text-[#AA8453] text-3xl" />
     },
     { 
       title: "Wellness Festivals", 
-      desc: "Quarterly wellness festivals featuring meditation workshops, fitness classes, and collaborations with wellness brands like Lululemon.", 
+      desc: "Bringing together both local & international wellness leaders, brands, and investors in quarterly experiences. i.e. Lululemon, Siro hotel.", 
       icon: <FaUsers className="text-[#AA8453] text-3xl" />
     },
     { 
       title: "Cultural Wellness Tours", 
-      desc: "Blending wellness and heritage with guided experiences like desert yoga, traditional Emirati spa treatments, and heritage walks.", 
+      desc: "Exclusive Emirati healing traditions, spa treatments, and desert wellness retreats for executive clients.", 
       icon: <FaSpa className="text-[#AA8453] text-3xl" />
     },
     { 
       title: "Digital Campaign & App", 
-      desc: "A dedicated wellness app featuring event schedules, guided meditations, influencer collaborations, and exclusive offers.", 
+      desc: "AI-based health tracking, VIP wellness memberships, and real estate integration. Exclusive access for investors i.e. Emaar’s high-net-worth clients receive priority access to luxury wellness properties.", 
       icon: <FaMobileAlt className="text-[#AA8453] text-3xl" />
     }
   ];

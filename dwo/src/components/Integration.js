@@ -10,7 +10,7 @@ const Integration = () => {
       {/* Title Section */}
       <motion.div ref={titleRef} initial="hidden" animate={titleAnimation} variants={fadeIn} className="mb-12 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide uppercase text-[#2D2D2D] font-inter">
-          Wellness & Housing
+          Workforce & Family Benefits
         </h1>
         <div className="w-20 h-1 bg-[#AA8453] mx-auto mt-4 rounded-full"></div>
       </motion.div>
@@ -20,26 +20,30 @@ const Integration = () => {
 
         {/* Left Column (Text) */}
         <div className="flex flex-col justify-center">
+          
+          {/* Workforce Wellness Benefits */}
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-worksans mb-6">
-            <span className="bg-[#FDE68A] px-2 rounded-md">Workforce Wellness Program</span> provides health and career benefits to workers, promoting a balanced lifestyle.
+            <span className="bg-[#FDE68A] px-2 rounded-md">Workforce Wellness Benefits</span> are designed to enhance employee well-being, career growth, and community engagement.
           </p>
 
           <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg">
-            <li>Free annual health check-ups, including dental and wellness consultations.</li>
-            <li>Discounted access to gyms, wellness events, and spa treatments.</li>
-            <li>Employment opportunities within wellness centers.</li>
+            <li><span className="font-semibold">Free annual health check-ups:</span> Basic healthcare packages with wellness consultations for preventive care.</li>
+            <li><span className="font-semibold">Exclusive discounts:</span> Access to gyms, wellness events, and spa treatments for a healthier lifestyle.</li>
+            <li><span className="font-semibold">Career opportunities:</span> Employment within wellness centers, supporting skill development and community engagement.</li>
           </ul>
 
           <hr className="my-8 border-[#AA8453]" />
 
+          {/* Elderly & Family Care */}
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-worksans mb-6">
-            <span className="bg-[#FDE68A] px-2 rounded-md">Elderly & Family Care</span> ensures support for families with healthcare, childcare, and wellness benefits.
+            <span className="bg-[#FDE68A] px-2 rounded-md">Elderly & Family Care</span> ensures comprehensive healthcare and childcare solutions, promoting family well-being.
           </p>
 
           <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg">
-            <li>Comprehensive health check-ups for UAE nationals.</li>
-            <li>On-site nurseries with integrated wellness programs.</li>
+            <li><span className="font-semibold">Comprehensive healthcare for UAE nationals:</span> Regular check-ups, preventive screenings, and specialized wellness services.</li>
+            <li><span className="font-semibold">On-site nurseries with wellness programs:</span> Supporting working parents with childcare, early development, and holistic well-being initiatives.</li>
           </ul>
+
         </div>
 
         {/* Right Column (Full-Sized Image Grid) */}
