@@ -6,7 +6,7 @@ const sections = [
   { id: "part-b", label: "Housing Solution" },
   { id: "integration", label: "Workforce Benefits" },
   { id: "business-impact", label: "Business Impact" },
-  { id: "budget-timeline", label: "Budget & Timeline" },
+  { id: "budget-timeline", label: "Projected Goal" },
   { id: "stakeholders", label: "Stakeholders" },
   { id: "implementation", label: "Timeline" },
 ];

@@ -27,7 +27,7 @@ const sections = [
   { title: "Housing Solution", subtitle: "Smart Tiny Living", img: imageLinks.housing, id: "part-b" },
   { title: "Workforce Benefits", subtitle: "Wellness & Housing Merge", img: imageLinks.integration, id: "integration" },
   { title: "Business Impact", subtitle: "Economic & Cultural Influence", img: imageLinks.businessImpact, id: "business-impact" },
-  { title: "Budget & Timeline", subtitle: "Project Financial Plan", img: imageLinks.budget, id: "budget-timeline" },
+  { title: "Projected Goal", subtitle: "Economic & Strategic Growth", img: imageLinks.budget, id: "budget-timeline" },
   { title: "Stakeholders", subtitle: "Key Partners & Collaborators", img: imageLinks.stakeholders, id: "stakeholders" },
   { title: "Timeline", subtitle: "Execution Strategy & Phases", img: imageLinks.implementation, id: "implementation" },
 ];
