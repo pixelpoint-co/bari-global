@@ -46,8 +46,15 @@ const VisionPage = () => {
       </motion.div>
 
       {/* Quote Section */}
+
       <motion.div ref={conclusionRef} initial="hidden" animate={conclusionAnimation} variants={fadeIn} className="text-center max-w-2xl mt-12 pb-12">
-        <p className="text-3xl md:text-4xl font-light text-[#AA8453] leading-snug font-worksans">
+      <p className="text-xl md:text-2xl italic text-gray-700 font-worksans leading-relaxed">
+       وَيَزِيدُ ٱللَّهُ ٱلَّذِينَ ٱهْتَدَوْا۟ هُدًۭى ۖ وَٱلْبَـٰقِيَـٰتُ ٱلصَّـٰلِحَـٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌۭ مَّرَدًّۭا
+     </p>
+     <span className="block mt-4 text-lg text-[#AA8453] font-medium">
+       – Quran 19:76 (Surah Maryam)
+     </span>
+        <p className="text-3xl md:text-4xl font-light text-[#AA8453] leading-snug font-worksans mt-4">
           To create a world-class wellness hub for holistic health, fitness, and rejuvenation and bring more people to Dubai.
         </p>
       </motion.div>
