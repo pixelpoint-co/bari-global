@@ -7,12 +7,8 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div className="text-center">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Contact Us</h3>
-          <p className="text-md text-gray-600">
-            <a href="mailto:bari@lhpasia.com" className="hover:text-[#AA8453] transition-all">
-              bari@bari.co.jp
-            </a>
-          </p>
+        <h2 className="text-3xl font-semibold">Join the Future of Wellness Living</h2>
+        <p className="mt-2 text-lg">Be part of Dubai’s next iconic transformation.</p>
         </div>
 
         {/* Soft Divider */}
@@ -20,7 +16,12 @@ const Footer = () => {
 
         {/* Presented By */}
         <p className="text-md md:text-lg text-gray-600">
-          Presented by <span className="text-gray-800 font-semibold">Bari</span>.
+        <p className="text-md text-gray-600">
+            <a href="mailto:bari@lhpasia.com" className="hover:text-[#AA8453] transition-all">
+              bari@bari.co.jp
+            </a>
+          </p>
+
         </p>
       </div>
     </footer>
