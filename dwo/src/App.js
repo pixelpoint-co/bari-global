@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import TopPage from "./components/TopPage";
 import ContentsPage from "./components/ContentsPage";
 import VisionPage from "./components/VisionPage";
+import TargetPage from "./components/TargetPage";
 import PartA from "./components/PartA";
 import PartB from "./components/PartB";
 import Integration from "./components/Integration";
@@ -30,6 +31,7 @@ function App() {
 
       {/* MAIN SECTIONS WITH NAVIGABLE IDs */}
       <div id="vision"><VisionPage /></div>
+      <div id="target"><TargetPage /></div>
       <div id="part-a"><PartA /></div>
       <div id="part-b"><PartB /></div>
       <div id="integration"><Integration /></div>

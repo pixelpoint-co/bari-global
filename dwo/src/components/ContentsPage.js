@@ -45,7 +45,7 @@ const ContentsPage = () => {
         animate="visible"
         exit="exit"
         variants={fadeIn}
-        className="w-full min-h-screen flex flex-col items-center justify-center 
+        className="w-full min-h-screen flex flex-col items-center justify-center
         bg-gradient-to-b from-[#FDFBF7] to-[#EDE8DF] px-4 md:px-12 py-16"
       >
         {/* Title */}
