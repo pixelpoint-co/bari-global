@@ -60,22 +60,25 @@ const VisionPage = () => {
       </motion.div>
 
       {/* Key Points Section */}
-      <motion.div ref={keyPointsRef} initial="hidden" animate={keyPointsAnimation} variants={fadeIn} className="mt-8 max-w-6xl flex flex-col md:flex-row items-center md:items-start justify-between gap-12 text-center md:text-left">
+      <motion.div
+        ref={keyPointsRef}
+        initial="hidden"
+        animate={keyPointsAnimation}
+        variants={fadeIn}
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl"
+      >
         {keyPoints.map(({ number, title, descList }) => (
-
-          <div key={number} className="flex flex-col items-center md:items-start md:w-1/2 gap-y-4">
-            <div className="flex items-center justify-center md:justify-start">
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 font-inter ">
-                {title}
-              </h2>
-            </div>
-            <ul className="">
+          <div key={number} className="flex flex-col items-center md:items-start space-y-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 font-inter">
+              {title}
+            </h2>
+            <ul className="w-full space-y-4">
               {descList.map((desc, i) => (
-                <li key={desc} className="mt-2 flex flex-row">
-                  <div className="inline-flex w-8 h-8 items-center justify-center rounded-full bg-[#AA8453] text-white text-xl font-semibold font-plex aspect-square">
+                <li key={desc} className="flex items-center">
+                  <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#AA8453] text-white text-lg font-semibold font-plex">
                     {i + 1}
                   </div>
-                  <p className="flex-1 ml-2 inline text-lg md:text-xl text-gray-600 leading-relaxed font-worksans">
+                  <p className="ml-4 text-lg md:text-xl text-gray-600 leading-relaxed font-worksans">
                     {desc}
                   </p>
                 </li>

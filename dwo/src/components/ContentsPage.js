@@ -11,25 +11,27 @@ const fadeIn = {
 // Image Links
 const imageLinks = {
   vision: "https://cdn.pixabay.com/photo/2019/03/14/07/22/city-4054326_1280.jpg",
+  target: "https://cdn.pixabay.com/photo/2023/01/25/12/48/overcast-7743510_1280.jpg",
   marketing: "https://cdn.pixabay.com/photo/2019/12/01/14/00/desert-4665569_1280.jpg",
   housing: "https://cdn.pixabay.com/photo/2021/02/05/07/07/building-5983598_1280.jpg",
-  integration: "https://cdn.pixabay.com/photo/2021/12/28/14/37/flower-6899466_1280.jpg",
+  benefits: "https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_1280.jpg",
   businessImpact: "https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg",
-  budget: "https://cdn.pixabay.com/photo/2020/11/18/22/31/staple-5756894_1280.jpg",
-  stakeholders: "https://cdn.pixabay.com/photo/2019/11/29/17/05/hand-4661763_1280.jpg",
-  implementation: "https://cdn.pixabay.com/photo/2019/10/23/11/53/architecture-4571361_1280.jpg",
+  projectedGoal: "https://cdn.pixabay.com/photo/2020/11/18/22/31/staple-5756894_1280.jpg",
+  keyPartners: "https://cdn.pixabay.com/photo/2019/11/29/17/05/hand-4661763_1280.jpg",
+  timeline: "https://cdn.pixabay.com/photo/2019/10/23/11/53/architecture-4571361_1280.jpg",
 };
 
-// Sections Data
+// Sections Data (No Subtitles)
 const sections = [
-  { title: "Vision", subtitle: "Oasis of the Future", img: imageLinks.vision, id: "vision" },
-  { title: "Marketing Campaign", subtitle: "Dubai Wellness Oasis", img: imageLinks.marketing, id: "part-a" },
-  { title: "Housing Solution", subtitle: "Smart Tiny Living", img: imageLinks.housing, id: "part-b" },
-  { title: "Workforce Benefits", subtitle: "Wellness & Housing Merge", img: imageLinks.integration, id: "integration" },
-  { title: "Business Impact", subtitle: "Economic & Cultural Influence", img: imageLinks.businessImpact, id: "business-impact" },
-  { title: "Projected Goal", subtitle: "Economic & Strategic Growth", img: imageLinks.budget, id: "budget-timeline" },
-  { title: "Stakeholders", subtitle: "Key Partners & Collaborators", img: imageLinks.stakeholders, id: "stakeholders" },
-  { title: "Timeline", subtitle: "Execution Strategy & Phases", img: imageLinks.implementation, id: "implementation" },
+  { title: "Vision", img: imageLinks.vision, id: "vision" },
+  { title: "Target", img: imageLinks.target, id: "target" },
+  { title: "Marketing", img: imageLinks.marketing, id: "part-a" },
+  { title: "Housing Solution", img: imageLinks.housing, id: "part-b" },
+  { title: "Benefits", img: imageLinks.benefits, id: "integration" },
+  { title: "Business Impact", img: imageLinks.businessImpact, id: "business-impact" },
+  { title: "Projected Goal", img: imageLinks.projectedGoal, id: "budget-timeline" },
+  { title: "Key Partners", img: imageLinks.keyPartners, id: "stakeholders" },
+  { title: "Timeline", img: imageLinks.timeline, id: "implementation" },
 ];
 
 const ContentsPage = () => {
@@ -49,33 +51,40 @@ const ContentsPage = () => {
         bg-gradient-to-b from-[#FDFBF7] to-[#EDE8DF] px-4 md:px-12 py-16"
       >
         {/* Title */}
-        <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl font-extrabold uppercase text-[#2D2D2D] tracking-widest font-inter text-center mb-8">
+        <motion.h1
+          variants={fadeIn}
+          className="text-3xl md:text-4xl font-extrabold uppercase text-[#2D2D2D] tracking-widest font-inter text-center mb-8"
+        >
           Contents
         </motion.h1>
 
-        {/* Sections Grid */}
-        <motion.div variants={fadeIn} className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
-          {sections.map(({ number, title, subtitle, img, id }, index) => (
+        {/* Sections Grid (Fixed 3x3 Layout) */}
+        <motion.div
+          variants={fadeIn}
+          className="grid grid-cols-3 gap-6 w-full max-w-5xl place-items-center"
+        >
+          {sections.map(({ title, img, id }, index) => (
             <motion.button
               key={id}
               variants={fadeIn}
               transition={{ delay: index * 0.1 }}
               onClick={() => scrollToSection(id)}
-              className="flex flex-col items-center text-center space-y-3 focus:outline-none"
+              className="flex flex-col items-center text-center w-32 md:w-40"
             >
-
-              {/* Section Title & Description */}
-              <motion.div variants={fadeIn} className="text-center">
-                <h2 className="text-sm md:text-md font-semibold text-gray-900 uppercase font-inter">
-                  {title}
-                </h2>
-                <p className="text-xs md:text-sm text-gray-700 font-worksans">{subtitle}</p>
-              </motion.div>
-
-              {/* Section Image (B&W with Hover Effect) */}
+              {/* Section Title (Fixed Height for Alignment, Smaller Font) */}
               <motion.div
                 variants={fadeIn}
-                className="w-24 h-16 md:w-32 md:h-20 bg-gray-300 overflow-hidden opacity-80 rounded-md"
+                className="h-8 flex items-center justify-center"
+              >
+                <h2 className="text-xs md:text-sm font-bold text-gray-900 uppercase font-inter tracking-wide">
+                  {title}
+                </h2>
+              </motion.div>
+
+              {/* Section Image (Smaller with Hover Effect) */}
+              <motion.div
+                variants={fadeIn}
+                className="w-20 h-14 md:w-28 md:h-20 bg-gray-300 overflow-hidden opacity-80 rounded-md"
               >
                 <img
                   src={img}

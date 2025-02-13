@@ -19,27 +19,28 @@ const Integration = () => {
       <motion.div ref={contentRef} initial="hidden" animate={contentAnimation} variants={fadeIn} className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl">
 
         {/* Left Column (Text) */}
-        <div className="flex flex-col justify-center">
-
-          {/* Workforce Wellness Benefits */}
-
-          <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg">
-            <li><span className="font-semibold">Free annual health check-ups:</span> Basic healthcare packages with wellness consultations for preventive care.</li>
-            <li><span className="font-semibold">Exclusive discounts:</span> Access to gyms, wellness events, and spa treatments for a healthier lifestyle.</li>
-            <li><span className="font-semibold">Career opportunities:</span> Employment within wellness centers, supporting skill development and community engagement.</li>
-          </ul>
-
-          <hr className="my-8 border-[#AA8453]" />
-
-          {/* Elderly & Family Care */}
+<div className="flex flex-col justify-center space-y-8">
+  {/* Workforce Wellness Benefits */}
+  <div>
+    <h2 className="text-2xl font-bold text-[#2D2D2D] mb-4">Workforce Wellness Benefits</h2>
+    <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg space-y-2">
+      <li><strong>Annual Health Check-Ups:</strong> Complimentary preventive wellness assessments.</li>
+      <li><strong>Exclusive Wellness Discounts:</strong> Special offers on gyms and wellness retreats.</li>
+      <li><strong>Career Development Opportunities:</strong> On-site jobs in wellness centers.</li>
+    </ul>
+  </div>
 
 
-          <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg">
-            <li><span className="font-semibold">Comprehensive healthcare for UAE nationals:</span> Regular check-ups, preventive screenings, and specialized wellness services.</li>
-            <li><span className="font-semibold">On-site nurseries with wellness programs:</span> Supporting working parents with childcare, early development, and holistic well-being initiatives.</li>
-          </ul>
+  {/* Family & Community Care */}
+  <div>
+    <h2 className="text-2xl font-bold text-[#2D2D2D] mb-4">Family & Community Care</h2>
+    <ul className="list-disc pl-6 text-gray-600 text-md md:text-lg space-y-2">
+      <li><strong>Comprehensive Healthcare for UAE Nationals:</strong> Preventive care and holistic services.</li>
+      <li><strong>On-Site Nurseries with Wellness Programs:</strong> Supporting early childhood development.</li>
+    </ul>
+  </div>
+</div>
 
-        </div>
 
         {/* Right Column (Full-Sized Image Grid) */}
         <div className="grid grid-cols-2 gap-2 w-full opacity-70">
