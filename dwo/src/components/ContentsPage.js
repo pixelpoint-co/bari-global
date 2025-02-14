@@ -8,6 +8,7 @@ const fadeIn = {
   exit: { opacity: 0, y: -30, transition: { duration: 0.5, ease: "easeInOut" } },
 };
 
+
 // Image Links
 const imageLinks = {
   vision: "https://cdn.pixabay.com/photo/2019/03/14/07/22/city-4054326_1280.jpg",
@@ -24,12 +25,12 @@ const imageLinks = {
 // Sections Data (No Subtitles)
 const sections = [
   { title: "Vision", img: imageLinks.vision, id: "vision" },
+  { title: "Projected Goal", img: imageLinks.projectedGoal, id: "budget-timeline" },
   { title: "Target", img: imageLinks.target, id: "target" },
   { title: "Marketing", img: imageLinks.marketing, id: "part-a" },
   { title: "Housing Solution", img: imageLinks.housing, id: "part-b" },
   { title: "Benefits", img: imageLinks.benefits, id: "integration" },
   { title: "Business Impact", img: imageLinks.businessImpact, id: "business-impact" },
-  { title: "Projected Goal", img: imageLinks.projectedGoal, id: "budget-timeline" },
   { title: "Key Partners", img: imageLinks.keyPartners, id: "stakeholders" },
   { title: "Timeline", img: imageLinks.timeline, id: "implementation" },
 ];

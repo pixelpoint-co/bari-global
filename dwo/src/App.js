@@ -31,12 +31,12 @@ function App() {
 
       {/* MAIN SECTIONS WITH NAVIGABLE IDs */}
       <div id="vision"><VisionPage /></div>
+      <div id="budget-timeline"><MarketingBudgetTimeline /></div>
       <div id="target"><TargetPage /></div>
       <div id="part-a"><PartA /></div>
       <div id="part-b"><PartB /></div>
       <div id="integration"><Integration /></div>
       <div id="business-impact"><BusinessImpact /></div>
-      <div id="budget-timeline"><MarketingBudgetTimeline /></div>
       <div id="stakeholders"><KeyStakeholders /></div>
       <div id="implementation"><ImplementationPlan /></div>
       <Footer />

@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 
 const sections = [
   { id: "vision", label: "Vision" },
+  { id: "budget-timeline", label: "Projected Goal" },
   { id: "target", label: "Target" },
   { id: "part-a", label: "Marketing Campaign" },
   { id: "part-b", label: "Housing Solution" },
   { id: "integration", label: "Benefits" },
   { id: "business-impact", label: "Business Impact" },
-  { id: "budget-timeline", label: "Projected Goal" },
   { id: "stakeholders", label: "Key Partners" },
   { id: "implementation", label: "Timeline" },
 ];
